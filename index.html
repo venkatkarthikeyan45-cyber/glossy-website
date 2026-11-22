@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GLOSSY — Luxury Gifting, Curated For You</title>
+  <meta name="description" content="Discover curated luxury gifts for every occasion. Handpicked, beautifully wrapped, and delivered with love.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="images/logo.png">
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div class="preloader" id="preloader">
+    <img src="images/logo.png" alt="GLOSSY" class="preloader-logo">
+  </div>
+
+  <!-- Announcement Bar -->
+  <div class="announcement-bar">
+    Free Gift Wrapping on Orders Over <span>₹2,000</span> &mdash; Use Code <span>GLOSSY25</span>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <nav class="nav">
+      <div class="nav-left">
+        <a href="#" class="nav-link" data-filter="all">Shop All</a>
+        <a href="#categories" class="nav-link">Categories</a>
+        <a href="#featured" class="nav-link">Featured</a>
+        <a href="#" class="nav-link">Gift Cards</a>
+      </div>
+
+      <a href="index.html" class="nav-logo">
+        <img src="images/logo.png" alt="GLOSSY">
+      </a>
+
+      <div class="nav-right">
+        <a href="#" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <button class="nav-icon" id="searchToggle" aria-label="Search">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+        </button>
+        <button class="nav-icon" id="cartToggle" aria-label="Cart">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+        <button class="hamburger" id="menuToggle" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-menu-close nav-icon" id="menuClose">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <a href="#" class="nav-link">Shop All</a>
+    <a href="#categories" class="nav-link">Categories</a>
+    <a href="#featured" class="nav-link">Featured</a>
+    <a href="#" class="nav-link">Gift Cards</a>
+    <a href="#" class="nav-link">About</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="hero-tagline">Curated Gifting Experience</div>
+        <h1 class="hero-title fade-up">
+          The Art of<br><em>Gifting</em>,<br>Perfected.
+        </h1>
+        <p class="hero-desc fade-up">
+          Discover our hand-curated collection of luxury gifts, beautifully wrapped and delivered with the care your loved ones deserve.
+        </p>
+        <div class="hero-ctas fade-up">
+          <a href="#products" class="btn btn-primary">Explore Collection</a>
+          <a href="#" class="btn btn-outline">Gift Guide</a>
+        </div>
+      </div>
+      <div class="hero-visual fade-up">
+        <div class="hero-image-wrapper">
+          <img src="images/hero-gift.jpg" alt="Luxury Gift Box" loading="eager">
+        </div>
+        <div class="hero-floating-card">
+          <div class="floating-icon">🎁</div>
+          <div class="floating-text">
+            <small>This Month</small>
+            <strong>2,400+ Gifts Sent</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Marquee -->
+  <div class="marquee-section">
+    <div class="marquee">
+      <div class="marquee-item"><span>Handpicked With Love</span><div class="marquee-dot"></div></div>
+      <div class="marquee-item"><span>Premium Gift Wrapping</span><div class="marquee-dot"></div></div>
+      <div class="marquee-item"><span>Same-Day Delivery</span><div class="marquee-dot"></div></div>
+      <div class="marquee-item"><span>Personalized Messages</span><div class="marquee-dot"></div></div>
+      <div class="marquee-item"><span>Eco-Friendly Packaging</span><div class="marquee-dot"></div></div>
+      <div class="marquee-item"><span>Curated Collections</span><div class="marquee-dot"></div></div>
+      <div class="marquee-item"><span>Handpicked With Love</span><div class="marquee-dot"></div></div>
+      <div class="marquee-item"><span>Premium Gift Wrapping</span><div class="marquee-dot"></div></div>
+      <div class="marquee-item"><span>Same-Day Delivery</span><div class="marquee-dot"></div></div>
+      <div class="marquee-item"><span>Personalized Messages</span><div class="marquee-dot"></div></div>
+      <div class="marquee-item"><span>Eco-Friendly Packaging</span><div class="marquee-dot"></div></div>
+      <div class="marquee-item"><span>Curated Collections</span><div class="marquee-dot"></div></div>
+    </div>
+  </div>
+
+  <!-- Categories -->
+  <section class="categories" id="categories">
+    <div class="container">
+      <div class="categories-header fade-up">
+        <div class="section-label">Browse By</div>
+        <h2 class="section-title">Gift Categories</h2>
+        <p class="section-subtitle">Find the perfect gift for every person and every moment</p>
+      </div>
+      <div class="categories-grid">
+        <div class="category-card fade-up" onclick="filterProducts('birthday')">
+          <img src="images/cat-birthday.jpg" alt="Birthday Gifts" loading="lazy">
+          <div class="category-overlay">
+            <span class="category-name">Birthday</span>
+            <span class="category-count">48 Gifts</span>
+          </div>
+          <div class="category-arrow">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </div>
+        </div>
+        <div class="category-card fade-up" onclick="filterProducts('anniversary')">
+          <img src="images/cat-anniversary.jpg" alt="Anniversary Gifts" loading="lazy">
+          <div class="category-overlay">
+            <span class="category-name">Anniversary</span>
+            <span class="category-count">36 Gifts</span>
+          </div>
+          <div class="category-arrow">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </div>
+        </div>
+        <div class="category-card fade-up" onclick="filterProducts('wedding')">
+          <img src="images/cat-wedding.jpg" alt="Wedding Gifts" loading="lazy">
+          <div class="category-overlay">
+            <span class="category-name">Wedding</span>
+            <span class="category-count">52 Gifts</span>
+          </div>
+          <div class="category-arrow">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </div>
+        </div>
+        <div class="category-card fade-up" onclick="filterProducts('corporate')">
+          <img src="images/cat-corporate.jpg" alt="Corporate Gifts" loading="lazy">
+          <div class="category-overlay">
+            <span class="category-name">Corporate</span>
+            <span class="category-count">28 Gifts</span>
+          </div>
+          <div class="category-arrow">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><line x1="7" y1="17" x2="17" y2="7"/><polyline points="7 7 17 7 17 17"/></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section class="products" id="products">
+    <div class="container">
+      <div class="products-header fade-up">
+        <div>
+          <div class="section-label">Our Collection</div>
+          <h2 class="section-title">Curated Gifts</h2>
+        </div>
+        <div class="products-filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="birthday">Birthday</button>
+          <button class="filter-btn" data-filter="anniversary">Anniversary</button>
+          <button class="filter-btn" data-filter="wedding">Wedding</button>
+          <button class="filter-btn" data-filter="corporate">Corporate</button>
+        </div>
+      </div>
+      <div class="products-grid" id="productsGrid">
+        <!-- Products injected by JS -->
+      </div>
+      <div class="products-cta fade-up">
+        <a href="#" class="btn btn-outline">View All Products</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Banner -->
+  <section class="featured-banner" id="featured">
+    <div class="container">
+      <div class="banner-wrapper fade-up">
+        <div class="banner-bg">
+          <img src="images/banner.jpg" alt="Gift Collection" loading="lazy">
+        </div>
+        <div class="banner-content">
+          <div class="section-label">Limited Edition</div>
+          <h2 class="section-title">The Festive Collection</h2>
+          <p>Unwrap the magic of the season with our exclusive festive hampers, thoughtfully curated with premium treats, handcrafted decor, and luxurious keepsakes.</p>
+          <a href="#" class="btn btn-gold">Shop Festive</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="testimonials-header fade-up">
+        <div class="section-label">Kind Words</div>
+        <h2 class="section-title">What Our Customers Say</h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card fade-up">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"The presentation was absolutely stunning. My mother cried tears of joy when she opened the gift box. GLOSSY truly understands the art of gifting."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">PR</div>
+            <div>
+              <div class="testimonial-author-name">Priya R.</div>
+              <div class="testimonial-author-title">Chennai, India</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card fade-up">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"Ordered a corporate gift set for our team retreat. The quality was exceptional, and the personalized touch made each gift feel unique. Highly recommended!"</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">AK</div>
+            <div>
+              <div class="testimonial-author-name">Arun K.</div>
+              <div class="testimonial-author-title">Bangalore, India</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card fade-up">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"The same-day delivery saved my anniversary! Beautiful wrapping, premium products, and a handwritten note — everything was perfect down to the last detail."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">SM</div>
+            <div>
+              <div class="testimonial-author-name">Sneha M.</div>
+              <div class="testimonial-author-title">Mumbai, India</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="services">
+    <div class="container">
+      <div class="services-grid">
+        <div class="service-card fade-up">
+          <div class="service-icon">🎁</div>
+          <h3 class="service-title">Gift Wrapping</h3>
+          <p class="service-desc">Every order is beautifully wrapped with premium materials and finished with a satin ribbon.</p>
+        </div>
+        <div class="service-card fade-up">
+          <div class="service-icon">🚚</div>
+          <h3 class="service-title">Express Delivery</h3>
+          <p class="service-desc">Same-day & next-day delivery available across India. Track your gift in real time.</p>
+        </div>
+        <div class="service-card fade-up">
+          <div class="service-icon">✉️</div>
+          <h3 class="service-title">Personal Notes</h3>
+          <p class="service-desc">Add a handwritten message to make your gift even more special and heartfelt.</p>
+        </div>
+        <div class="service-card fade-up">
+          <div class="service-icon">💎</div>
+          <h3 class="service-title">Premium Quality</h3>
+          <p class="service-desc">Only the finest products make it to our collection. Quality you can trust, always.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="newsletter">
+    <div class="container">
+      <div class="section-label">Stay Connected</div>
+      <h2 class="section-title">Join the GLOSSY Family</h2>
+      <p class="section-subtitle">Be the first to know about new arrivals, exclusive offers, and curated gift guides.</p>
+      <form class="newsletter-form" id="newsletterForm" action="php/newsletter.php" method="POST">
+        <input type="email" name="email" placeholder="Your email address" required>
+        <button type="submit">Subscribe</button>
+      </form>
+      <p class="newsletter-note">We respect your privacy. Unsubscribe at any time.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="images/logo.png" alt="GLOSSY">
+          </div>
+          <p>Curating luxury gifts that tell a story. Every box, every ribbon, every moment — crafted to perfection.</p>
+          <div class="footer-social">
+            <a href="#" class="social-link" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Twitter">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Pinterest">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.24 2.65 7.86 6.39 9.29-.09-.78-.17-1.98.04-2.83.18-.77 1.2-5.07 1.2-5.07s-.31-.61-.31-1.52c0-1.42.82-2.48 1.85-2.48.87 0 1.29.66 1.29 1.44 0 .88-.56 2.19-.85 3.41-.24 1.02.51 1.85 1.52 1.85 1.82 0 3.22-1.92 3.22-4.69 0-2.45-1.76-4.17-4.28-4.17-2.91 0-4.62 2.18-4.62 4.44 0 .88.34 1.82.76 2.34.08.1.09.19.07.29-.08.31-.25 1.02-.29 1.16-.05.19-.15.23-.35.14-1.31-.61-2.13-2.52-2.13-4.06 0-3.31 2.41-6.35 6.94-6.35 3.64 0 6.48 2.6 6.48 6.07 0 3.62-2.28 6.53-5.45 6.53-1.06 0-2.07-.55-2.41-1.21l-.66 2.5c-.24.91-.88 2.05-1.32 2.75C9.74 21.86 10.85 22 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="#">All Gifts</a></li>
+            <li><a href="#">Birthday</a></li>
+            <li><a href="#">Anniversary</a></li>
+            <li><a href="#">Wedding</a></li>
+            <li><a href="#">Corporate</a></li>
+            <li><a href="#">Gift Cards</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Help</h4>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Shipping</a></li>
+            <li><a href="#">Returns</a></li>
+            <li><a href="#">Track Order</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">Sustainability</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 GLOSSY. All rights reserved.</span>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookie Preferences</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cart Sidebar -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <div class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+      <h3>Your Bag (<span id="cartItemCount">0</span>)</h3>
+      <button class="cart-close" id="cartClose">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <div class="cart-empty" id="cartEmpty">
+        <div class="cart-empty-icon">🛍️</div>
+        <h4>Your bag is empty</h4>
+        <p>Discover something special for someone you love.</p>
+      </div>
+    </div>
+    <div class="cart-footer" id="cartFooter" style="display:none;">
+      <div class="cart-subtotal">
+        <span>Subtotal</span>
+        <span id="cartSubtotal">₹0</span>
+      </div>
+      <div class="cart-subtotal cart-savings" id="cartSavingsRow" style="display:none;">
+        <span>Bundle Savings</span>
+        <span id="cartSavings">− ₹0</span>
+      </div>
+      <div class="cart-subtotal cart-total-row">
+        <span>Total</span>
+        <strong id="cartTotal">₹0</strong>
+      </div>
+      <p class="cart-footnote">Shipping &amp; GST are shown at checkout. No online payment — you'll send us an order request and we'll confirm it with you.</p>
+      <button class="btn btn-primary cart-checkout" onclick="checkout()">Proceed to Checkout</button>
+    </div>
+  </div>
+
+  <!-- Quick View Modal -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+      <div class="modal-image" id="modalImage"></div>
+      <div class="modal-content" id="modalContent"></div>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div class="toast" id="toast">
+    <span class="toast-icon">✓</span>
+    <span id="toastMsg">Added to bag</span>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
